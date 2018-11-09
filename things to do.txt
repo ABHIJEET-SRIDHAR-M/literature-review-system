@@ -21,4 +21,4 @@ b. https://github.com/tesseract-ocr/tesseract
 	
 	
 Note on tagging after removing stopwords
-one problem was the repetetion thing from the recognized file. so while taking the tags of the words, lot of words were repeated. I took only unique words and added them to the list. One part which we need to consider is that some POS were different for the same word. Im not sure why but that happened. We might need to consider it at some point for more accurate results.
+one problem was the repetetion thing from the recognized file. so while taking the tags of the words, lot of words were repeated. I took only unique words and added them to the list. One part which we need to consider is that some POS were different for the same word. Im not sure why but that happened. We might need to consider it at some point for more accurate results...
