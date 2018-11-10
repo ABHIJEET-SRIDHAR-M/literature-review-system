@@ -5,9 +5,13 @@ text = str(((pytesseract.image_to_string(Image.open('img_1.jpg')))))
 #text = str(((pytesseract.image_to_string(Image.open('img_1.jpg'))).encode('utf-8')))
 text = text.replace('-\n', '')
 text = text.replace('\n', ' ')
-
+start = 0
+end = len(text)
+index = text.find('©')
+if(index != -1):
+	end = index
 
 f=open("abstract.txt", "r+")
-f.write(text[2:len(text)-1])
+f.write(text[start:end])
 
 f.close()
