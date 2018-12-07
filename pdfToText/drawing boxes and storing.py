@@ -33,7 +33,7 @@ for idx in range(len(contours)):
     cv2.drawContours(mask, contours, idx, (255, 255, 255), -1)
     r = float(cv2.countNonZero(mask[y:y+h, x:x+w])) / (w * h)
     
-    if r > 0.45 and w > 8 and h > 8 and y<(width/2) and x<(height/2) and w*h > (width/6)*(height/6):
+    if r > 0.45 and w > 8 and h > 8 and y<(width/1.3) and x<(height/1.3) and w*h > (width/6)*(height/6):
     
         cv2.rectangle(rgb, (x-5, y-5), (x+w+5, y+h+5), (0, 255, 0), 1)
         cropped = rgb[y - 5:y +  h + 5 , x - 5 : x + w + 5]
