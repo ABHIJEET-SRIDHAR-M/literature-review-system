@@ -26,7 +26,7 @@ for i in range(0,2*n,interval):
 		start = end - overlap
 		end = start + interval 
 
-	if end > n:
+	if end >= n:
 		end = n
 		flag = 1
 		

@@ -21,5 +21,7 @@ for items in list:
 		if(words.find("NN") != -1):
 			list.append(words)
 
-print(list)
+for it in list:
+	print(it)
+	print("\n")
 	
