@@ -18,6 +18,7 @@ for line in list:
 		lower = line.lower()
 		index = lower.find(phrase)
 		if index != -1:
+			print(line)
 			selected.append(line)
 for i in selected:
 	s = s+i+". "
