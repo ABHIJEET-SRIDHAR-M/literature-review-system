@@ -1,27 +1,27 @@
 storing pic of first page of pdf
 
-pip install pdf2image
-pip install pillow
-pip install Image
+pip3 install pdf2image
+pip3 install pillow
+pip3 install Image
 
 Recognizing text from image
-pip install pyocr
-pip install pytesseract
+pip3 install pyocr
+pip3 install pytesseract
 sudo apt install tesseract-ocr (for ubuntu)
 install tesseract from the url in the original document
 
 Drawing boxes and getting abstract
-pip install opencv-python ( it will automatically isntall numpy. else pip install numpy)
+pip3 install opencv-python ( it will automatically isntall numpy. else pip3 install numpy)
 
 Recognizing speech
-pip install SpeechRecognition
+pip3 install SpeechRecognition
 
 Slicing audio file
-pip install pydub
-pip install audioread
+pip3 install pydub
+pip3 install audioread
 
 Removing stopwords and tagging
-pip install nltk
+pip3 install nltk
 [In cmd]:
 >python
 >import nltk
@@ -33,4 +33,6 @@ pip install nltk
 >nltk.download('stopwords')
 >nltk.download('punkt')
 >nltk.download('averaged_perceptron_tagger')
->
+
+problem_statement
+pip3 install rake_nltk
