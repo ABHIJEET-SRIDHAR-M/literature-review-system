@@ -1,6 +1,6 @@
 from PIL import Image
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe"
+#pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe"
 text = str(((pytesseract.image_to_string(Image.open('img_1.jpg')))))
 #text = str(((pytesseract.image_to_string(Image.open('img_1.jpg'))).encode('utf-8')))
 text = text.replace('-\n', '')
