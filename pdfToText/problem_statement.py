@@ -18,7 +18,7 @@ for line in list:
 		lower = line.lower()
 		index = lower.find(phrase)
 		if index != -1:
-			print(line)
+
 			selected.append(line)
 for i in selected:
 	s = s+i+". "
@@ -29,5 +29,8 @@ r=Rake()
 r.extract_keywords_from_text(text)
 
 list = (r.get_ranked_phrases())
+astext = ""
 for items in list:
-	print(items)
+	astext = astext + items +". "
+
+print(astext)
