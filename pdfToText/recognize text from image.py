@@ -11,7 +11,10 @@ index = text.find('©')
 if(index != -1):
 	end = index
 
-f=open("abstract.txt", "r+")
-f.write(text[start:end])
+f=open("abstract.txt", "w+")
+
+final = text[start:end]
+
+f.write(final)
 
 f.close()
