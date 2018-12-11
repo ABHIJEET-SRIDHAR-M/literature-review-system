@@ -1,3 +1,4 @@
+import os.path
 from rake_nltk import Rake
 
 f = open("abstract.txt",'r')
@@ -31,6 +32,15 @@ r.extract_keywords_from_text(text)
 list = (r.get_ranked_phrases())
 astext = ""
 for items in list:
-	astext = astext + items +". "
+	print(items)
+	astext = astext + items +" "
 
-print(astext)
+f=open("key_list_tagged.txt", "w+")
+f.write(astext)
+
+f.close()
+
+os.system('python3 "remove stopwords and tag.py"')
+
+os.system('python3 "find pattern.py"')
+
