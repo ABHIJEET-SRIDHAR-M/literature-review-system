@@ -1,7 +1,7 @@
 import re
 from array import *
 
-f=open("Stop_words.txt", "r")
+f=open("Stop_Words.txt", "r")
 text =f.read()
 pattern = re.compile('(\w+? JJ\n)*(\w+ NN\w?\n)+', re.DOTALL)
 #without grouping = (\w+? JJ\n)*(\w+ NN\w?)+

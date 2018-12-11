@@ -3,10 +3,10 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from collections import OrderedDict
 
-f=open("recognized.txt", "r")
-sent = f.read()
-f.close()
-
+#f=open("recognized.txt", "r")
+#sent = f.read()
+#f.close()
+sent = "every successfully distinguished phishing webpage. victimized domain. target domain. paper addresses. method proposed. automatically identifying. lacuna. "
 stop_words = set(stopwords.words('english'))
 word_tokens = word_tokenize(sent)
 filtered_sentence = [w for w in word_tokens if not w in stop_words]
