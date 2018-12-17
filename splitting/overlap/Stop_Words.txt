@@ -1,10 +1,9 @@
 every DT
 successfully RB
 distinguished VBN
-phishing NN
+phishing VBG
 webpage NN
-. .
-victimized VBN
+victimized VBD
 domain NN
 target NN
 paper NN

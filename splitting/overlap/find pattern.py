@@ -23,5 +23,5 @@ for items in list:
 
 for it in list:
 	print(it)
-	print("\n")
+	
 	

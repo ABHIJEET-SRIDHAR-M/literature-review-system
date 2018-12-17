@@ -1,7 +1,7 @@
 every DT
 successfully RB
 distinguished VBN
-phishing VBG
+phish JJ
 webpage NN
 victimized VBD
 domain NN
