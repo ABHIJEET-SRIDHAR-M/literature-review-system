@@ -1,0 +1,1 @@
+ The method proposed in this paper addresses this lacuna by automatically identifying the victimized domain (target domain) of every successfully distinguished phishing webpage.
