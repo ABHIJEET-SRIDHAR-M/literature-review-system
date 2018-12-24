@@ -1,4 +1,3 @@
-phishing webpage
-victimized domain
-target domain
-lacuna
+preconditioner
+classes
+family

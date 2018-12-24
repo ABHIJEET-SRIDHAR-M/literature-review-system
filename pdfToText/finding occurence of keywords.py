@@ -11,7 +11,8 @@ alltext = alltext.lower()
 phrases = ['in this paper','in this ','in this study','our research','this paper proposes','this novel','this paper','this paper aimed','we describe','this article', 'this article extends','this work examined','the present study','we present','the objective of this paper','we examine','this paper surveys','this paper conducted', 'this paper presents','we develop a novel approach','we develop','in this paper,we have proposed','this paper describe','in this domain', 'method proposed']
 
 def rSubset(arr, r):   
-	return list(combinations(arr, r)) 
+	results = [x for x in combinations(arr, 2) ]
+	return results
 
 def findWords(words):
 	
