@@ -41,6 +41,7 @@ for i in words:
 	number_occ = findWords(i)
 	print(i+" -> "+str(number_occ))
 	if number_occ > 1:
+
 		newList.append(i)
 
 	if num > 2:
@@ -51,16 +52,24 @@ for i in words:
 			number_occ = findWords(check)
 			print(check+" -> "+str(number_occ))
 			if number_occ > 1:
+
 				newList.append(check)
 
 print('\n Final Selected keywords:\n')
 
 counter = 1
 
+f1 = open("keywords.txt",'w+')
+f1.write('')
+f1.close()
+
+f2 = open("keywords.txt",'w+')
+
+
 for items in newList:
 	
 	if items not in phrases:	
 		print(str(counter) + " "+ items)
+		f2.write(items + '\n')
 		counter+=1
-		
-
+f2.close()

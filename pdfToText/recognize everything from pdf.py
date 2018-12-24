@@ -1,3 +1,4 @@
+import os
 from PIL import Image
 import pytesseract
 import sys
@@ -6,6 +7,11 @@ import sys
 filelimit = int(sys.argv[1])
 
 outfile = "out_text.txt"
+
+f1 = open(outfile,'w+')
+f1.write('')
+f1.close()
+
 f=open(outfile, "a")
 for i in range(1,filelimit+1):
 	
@@ -24,3 +30,9 @@ for i in range(1,filelimit+1):
 	final = text
 	f.write(final)
 f.close()
+
+os.remove('out.jpg')
+for i in range(1,filelimit+1):
+	d_file="out_"+str(i)+".jpg"
+
+	os.remove(d_file)
