@@ -3,8 +3,8 @@ import sys
 import os
 
 
-file = sys.argv[1]
-pages = convert_from_path(file, 500)
+files = sys.argv[1]
+pages = convert_from_path(files, 500)
 i=1
 
 for page in pages:
@@ -14,4 +14,5 @@ for page in pages:
 
 i-=1
 
+print('Writing text from all the images to text file...\n')
 os.system('python3 "recognize everything from pdf.py" ' + str(i))

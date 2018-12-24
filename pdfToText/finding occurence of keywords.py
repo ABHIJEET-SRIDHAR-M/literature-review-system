@@ -47,8 +47,9 @@ for i in words:
 
 	if num > 2:
 		listword = i.split()
-		combinations = rSubset(listword, 2)
-		for comb in combinations:
+		combos = []
+		combos = rSubset(listword, 2)
+		for comb in combos:
 			check = (" ".join(comb))
 			number_occ = findWords(check)
 			print(check+" -> "+str(number_occ))

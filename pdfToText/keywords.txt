@@ -1,12 +1,7 @@
-terrain model complex modeling tools
-advanced sketching interface
+terrain model
+terrain modeling
+modeling tools
 terrain
-model terrain
 training games
-required properties
-
-
 instructors
-
 declare
-constructing

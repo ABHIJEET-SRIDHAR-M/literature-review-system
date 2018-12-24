@@ -6,7 +6,7 @@ text =f.read()
 pattern = re.compile('(\w+? JJ\w?\n)*(\w+ NN\w?\n)+', re.DOTALL)
 #without grouping = (\w+? JJ\n)*(\w+ NN\w?)+
 result = pattern.finditer(text)
-list=[]
+lists=[]
 for element in result:
 	r = element.group()
 	words = r.split('\n')
@@ -14,14 +14,14 @@ for element in result:
 	for i in range(0,len(words)):
 		if(words[i] != ""):
 			temp.append(words[i])
-	list.append(temp)
+	lists.append(temp)
 
-for items in list:
+for items in lists:
 	for words in items:
 		if(words.find("NN") != -1):
-			list.append(words)
+			lists.append(words)
 
-for it in list:
+for it in lists:
 	print(it)
 	print("\n")
 	
