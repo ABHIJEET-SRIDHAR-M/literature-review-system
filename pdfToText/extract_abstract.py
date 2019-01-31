@@ -37,3 +37,4 @@ os.remove('abstract.txt')
 os.remove('out_text.txt')
 
 os.remove('p_statment.txt')
+

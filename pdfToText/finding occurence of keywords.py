@@ -67,7 +67,7 @@ f1.close()
 
 f2 = open("keywords.txt",'w+')
 
-
+newList = newList[:10]
 for items in newList:
 	
 	if items not in phrases:	
